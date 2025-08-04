@@ -43,6 +43,10 @@
         .day-header:hover {
             box-shadow: 0 0 25px rgba(103, 232, 249, 0.6);
         }
+        .today-highlight .day-header {
+            border-color: #f8fafc;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-200">
@@ -64,7 +68,7 @@
         </div>
     </header>
 
-    <!-- Dynamic Time and Weather Dashboard -->
+    <!-- Dynamic Dashboard -->
     <div id="dynamic-dashboard-container" class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <!-- Content will be injected by JavaScript -->
     </div>
@@ -104,7 +108,7 @@
                 events: [
                     { type: 'flight', time: '9:10 AM', description: 'Depart Abu Dhabi on flight #FZTYEI.', details: 'Connecting flight to Bangkok.' },
                     { type: 'flight', time: '6:50 PM', description: 'Land in Bangkok (BKK).', details: 'Welcome to Thailand!' },
-                    { type: 'food', time: 'Evening', description: 'Pickup food from Chabad House Bangkok.', link: 'https://goo.gl/maps/y3f6gq73tJbXk2zQ8' }
+                    { type: 'food', time: 'Evening', description: 'Pickup food from Chabad House Bangkok.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Bangkok' }
                 ],
                 sleep: { name: 'Chillax Heritage', details: 'Reservation Details: Confirmation #1128140500202796. Check-in: Aug 5 @ 2:00 PM. Checkout: Aug 7 @ 12:00 PM. Room: Deluxe Double Room. Guest: Zev Weisz.' }
             },
@@ -115,12 +119,12 @@
                 weatherLocation: "Bangkok",
                 events: [
                     { type: 'activity', time: '9:00 AM', description: 'Meet driver outside hotel.', details: 'Driver contact: 66-63-223-9629' },
-                    { type: 'activity', time: 'Morning', description: 'Maeklong Railway Market (Train at 11:15 & 11:30).', link: 'https://goo.gl/maps/e4XGvjZqFq6vY3jR7' },
-                    { type: 'activity', time: 'Morning', description: 'Damnoen Saduak Floating Market (Take a boat tour).', link: 'https://goo.gl/maps/b3aP5Uq6w8xYJ4Zt5' },
-                    { type: 'activity', time: 'Afternoon', description: 'Visit Sky Bar for amazing views.', link: 'https://goo.gl/maps/x8rFp8H7S8kYt3U9A' },
+                    { type: 'activity', time: 'Morning', description: 'Maeklong Railway Market (Train at 11:15 & 11:30).', link: 'https://www.google.com/maps/search/?api=1&query=Maeklong+Railway+Market' },
+                    { type: 'activity', time: 'Morning', description: 'Damnoen Saduak Floating Market (Take a boat tour).', link: 'https://www.google.com/maps/search/?api=1&query=Damnoen+Saduak+Floating+Market' },
+                    { type: 'activity', time: 'Afternoon', description: 'Visit Sky Bar for amazing views.', link: 'https://www.google.com/maps/search/?api=1&query=Sky+Bar+at+Lebua' },
                     { type: 'activity', time: 'Afternoon', description: 'Take a Tuk Tuk back to the hotel.' },
-                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Bangkok.', link: 'https://goo.gl/maps/y3f6gq73tJbXk2zQ8' },
-                    { type: 'activity', time: 'Evening', description: 'Explore Khao San Road night market.', link: 'https://goo.gl/maps/sWz8tJ2vK5yG9A6J7' }
+                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Bangkok.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Bangkok' },
+                    { type: 'activity', time: 'Evening', description: 'Explore Khao San Road night market.', link: 'https://www.google.com/maps/search/?api=1&query=Khao+San+Road' }
                 ],
                 sleep: { name: 'Chillax Heritage', details: 'Reservation Details: Confirmation #1128140500202796. Check-in: Aug 5 @ 2:00 PM. Checkout: Aug 7 @ 12:00 PM. Room: Deluxe Double Room. Guest: Zev Weisz.' }
             },
@@ -130,10 +134,10 @@
                 timeZone: "Asia/Bangkok",
                 weatherLocation: "Chiang Mai",
                 events: [
-                    { type: 'activity', time: 'Morning', description: 'Explore The Grand Palace.', link: 'https://goo.gl/maps/3J8kZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'Walk through Chinatown.', link: 'https://goo.gl/maps/f5N7Z8M6tJ2xK8P9A' },
-                    { type: 'activity', time: 'Afternoon', description: 'Shopping at CentralWorld Mall.', link: 'https://goo.gl/maps/h5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Afternoon', description: 'Visit ICONSIAM Mall.', link: 'https://goo.gl/maps/k7Fp9L8M7N6vB3T6A' },
+                    { type: 'activity', time: 'Morning', description: 'Explore The Grand Palace.', link: 'https://www.google.com/maps/search/?api=1&query=The+Grand+Palace+Bangkok' },
+                    { type: 'activity', time: 'Morning', description: 'Walk through Chinatown.', link: 'https://www.google.com/maps/search/?api=1&query=Chinatown+Bangkok' },
+                    { type: 'activity', time: 'Afternoon', description: 'Shopping at CentralWorld Mall.', link: 'https://www.google.com/maps/search/?api=1&query=CentralWorld+Mall+Bangkok' },
+                    { type: 'activity', time: 'Afternoon', description: 'Visit ICONSIAM Mall.', link: 'https://www.google.com/maps/search/?api=1&query=ICONSIAM+Mall+Bangkok' },
                     { type: 'flight', time: '9:25 PM', description: 'Flight to Chiang Mai (BKK → CNX)', details: 'Flight Details: Thai VietJet Air - VZ104. Departs: 9:25 PM. Arrives: 10:50 PM. Confirmation: XWS88Y. Capital One Travel: H-Z-E23YZ150Q' },
                     { type: 'flight', time: '10:50 PM', description: 'Land in Chiang Mai.', details: 'Welcome to the north!' }
                 ],
@@ -146,12 +150,12 @@
                 weatherLocation: "Chiang Mai",
                 events: [
                     { type: 'activity', time: '9:00 AM', description: 'Meet driver outside hotel.' },
-                    { type: 'activity', time: 'Morning', description: 'Sticky Waterfall (Buatong).', link: 'https://goo.gl/maps/k5Fp9L8M7N6vB3T6A' },
-                    { type: 'activity', time: 'Morning', description: 'Visit Tiger Kingdom.', link: 'https://goo.gl/maps/x7GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Morning', description: 'Monkey Show at Karen Village.', link: 'https://goo.gl/maps/a8HkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Afternoon', description: 'Snake Show at Karen Village.', link: 'https://goo.gl/maps/a8HkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Afternoon', description: 'Explore Karen Long Neck Village.', link: 'https://goo.gl/maps/a8HkZ9xU6YvW5J4N7' },
-                    { type: 'shabbat', time: '7:10 PM', description: 'Shabbat at Chabad of Chiang Mai.', details: 'Candle lighting at 7:10 PM.', link: 'https://goo.gl/maps/e8JkZ9xU6YvW5J4N7' }
+                    { type: 'activity', time: 'Morning', description: 'Sticky Waterfall (Buatong).', link: 'https://www.google.com/maps/search/?api=1&query=Bua+Tong+Sticky+Waterfall' },
+                    { type: 'activity', time: 'Morning', description: 'Visit Tiger Kingdom.', link: 'https://www.google.com/maps/search/?api=1&query=Tiger+Kingdom+Chiang+Mai' },
+                    { type: 'activity', time: 'Morning', description: 'Monkey Show at Karen Village.', link: 'https://www.google.com/maps/search/?api=1&query=Karen+Long+Neck+Village+Chiang+Mai' },
+                    { type: 'activity', time: 'Afternoon', description: 'Snake Show at Karen Village.', link: 'https://www.google.com/maps/search/?api=1&query=Karen+Long+Neck+Village+Chiang+Mai' },
+                    { type: 'activity', time: 'Afternoon', description: 'Explore Karen Long Neck Village.', link: 'https://www.google.com/maps/search/?api=1&query=Karen+Long+Neck+Village+Chiang+Mai' },
+                    { type: 'shabbat', time: '7:10 PM', description: 'Shabbat at Chabad of Chiang Mai.', details: 'Candle lighting at 7:10 PM.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+of+Chiang+Mai' }
                 ],
                 sleep: { name: 'Shangri-La Chiang Mai', details: 'Reservation Details: Hotel Confirmation #2255072172. Trip ID: 1004971831. Check-in: Aug 7 @ 3:00 PM. Check-out: Aug 11 @ 12:00 PM. Room: Deluxe Room, 1 King bed.' }
             },
@@ -162,8 +166,8 @@
                 weatherLocation: "Chiang Mai",
                 events: [
                     { type: 'shabbat', time: 'Day', description: 'Shabbat Rest Day.', details: 'Enjoy a peaceful day.' },
-                    { type: 'activity', time: 'Evening', description: 'Explore the Night Bazaar.', link: 'https://goo.gl/maps/r5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Evening', description: 'Visit the Saturday Night Market.', link: 'https://goo.gl/maps/s8HkZ9xU6YvW5J4N7' }
+                    { type: 'activity', time: 'Evening', description: 'Explore the Night Bazaar.', link: 'https://www.google.com/maps/search/?api=1&query=Chiang+Mai+Night+Bazaar' },
+                    { type: 'activity', time: 'Evening', description: 'Visit the Saturday Night Market.', link: 'https://www.google.com/maps/search/?api=1&query=Saturday+Walking+Street+Chiang+Mai' }
                 ],
                 sleep: { name: 'Shangri-La Chiang Mai', details: 'Reservation Details: Hotel Confirmation #2255072172. Trip ID: 1004971831. Check-in: Aug 7 @ 3:00 PM. Check-out: Aug 11 @ 12:00 PM. Room: Deluxe Room, 1 King bed.' }
             },
@@ -174,11 +178,11 @@
                 weatherLocation: "Chiang Mai",
                 events: [
                     { type: 'activity', time: '9:00 AM', description: 'Meet driver outside hotel.' },
-                    { type: 'activity', time: 'Morning', description: 'Bamboo Rafting with Panda Tour.', link: 'https://goo.gl/maps/t8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'White Water Rafting with Siam River Adventures.', link: 'https://goo.gl/maps/u5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Afternoon', description: 'ATV adventure at 8Adventures Camp.', link: 'https://goo.gl/maps/v8HkZ9xU6YvW5J4N7' },
+                    { type: 'activity', time: 'Morning', description: 'Bamboo Rafting with Panda Tour.', link: 'https://www.google.com/maps/search/?api=1&query=Panda+Tour+Chiang+Mai' },
+                    { type: 'activity', time: 'Morning', description: 'White Water Rafting with Siam River Adventures.', link: 'https://www.google.com/maps/search/?api=1&query=Siam+River+Adventures+Chiang+Mai' },
+                    { type: 'activity', time: 'Afternoon', description: 'ATV adventure at 8Adventures Camp.', link: 'https://www.google.com/maps/search/?api=1&query=8Adventures+Chiang+Mai' },
                     { type: 'activity', time: 'Afternoon', description: 'Visit an Elephant Sanctuary.' },
-                    { type: 'activity', time: 'Evening', description: 'Explore the Sunday Night Market.', link: 'https://goo.gl/maps/w5GkX9J3L8vR7F9A8' }
+                    { type: 'activity', time: 'Evening', description: 'Explore the Sunday Night Market.', link: 'https://www.google.com/maps/search/?api=1&query=Sunday+Walking+Street+Chiang+Mai' }
                 ],
                 sleep: { name: 'Shangri-La Chiang Mai', details: 'Reservation Details: Hotel Confirmation #2255072172. Trip ID: 1004971831. Check-in: Aug 7 @ 3:00 PM. Check-out: Aug 11 @ 12:00 PM. Room: Deluxe Room, 1 King bed.' }
             },
@@ -188,8 +192,8 @@
                 timeZone: "Asia/Bangkok",
                 weatherLocation: "Phuket",
                 events: [
-                    { type: 'activity', time: 'Morning', description: 'Grand Canyon Water Park (Zipline & Kayak).', link: 'https://goo.gl/maps/x8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'Walk around the Old City.', link: 'https://goo.gl/maps/y5GkX9J3L8vR7F9A8' },
+                    { type: 'activity', time: 'Morning', description: 'Grand Canyon Water Park (Zipline & Kayak).', link: 'https://www.google.com/maps/search/?api=1&query=Grand+Canyon+Water+Park+Chiang+Mai' },
+                    { type: 'activity', time: 'Morning', description: 'Walk around the Old City.', link: 'https://www.google.com/maps/search/?api=1&query=Chiang+Mai+Old+City' },
                     { type: 'flight', time: '6:15 PM', description: 'Flight to Phuket (CNX → HKT)', details: 'Flight Details: Thai AirAsia - FD3158. Departs: 6:15 PM. Arrives: 8:15 PM. Confirmation: S7WT9F. Capital One Travel: H-Z-M2M68WI6G' },
                     { type: 'flight', time: '8:15 PM', description: 'Land in Phuket (HKT).', details: 'Welcome to paradise!' }
                 ],
@@ -201,7 +205,7 @@
                 timeZone: "Asia/Bangkok",
                 weatherLocation: "Phi Phi Islands",
                 events: [
-                    { type: 'activity', time: '11:00 AM', description: 'Ferry from Rassada Pier to Phi Phi Island', details: 'Ferry Details: Operator: Chaokoh Travel Center. Booking ID: U40990. Departs: 11:00 AM. Arrives: 1:00 PM. Passengers: Zev Weisz, Esther Tesser. Check-in 30 mins before departure.', link: 'https://goo.gl/maps/z8HkZ9xU6YvW5J4N7' },
+                    { type: 'activity', time: '11:00 AM', description: 'Ferry from Rassada Pier to Phi Phi Island', details: 'Ferry Details: Operator: Chaokoh Travel Center. Booking ID: U40990. Departs: 11:00 AM. Arrives: 1:00 PM. Passengers: Zev Weisz, Esther Tesser. Check-in 30 mins before departure.', link: 'https://www.google.com/maps/search/?api=1&query=Rassada+Pier+Phuket' },
                     { type: 'activity', time: 'Afternoon', description: 'Chill at the resort.' },
                     { type: 'activity', time: 'Evening', description: 'Enjoy a show on the beach.' }
                 ],
@@ -214,12 +218,12 @@
                 weatherLocation: "Phuket",
                 events: [
                     { type: 'activity', time: '8:30 AM', description: 'Private long tail boat tour', details: 'Trip Details: Operator: Gosafe Transport. Booking ID: 12GO21898144. Departs: 5:00 PM. Arrives: 6:00 PM. Passengers: Zev Weisz, Esther Tesser. Check-in 45 mins before departure.' },
-                    { type: 'activity', time: 'Morning', description: 'Visit Maya Bay.', link: 'https://goo.gl/maps/a5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Morning', description: 'See monkeys on Monkey Beach.', link: 'https://goo.gl/maps/b8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'Swim in Pi Leh Lagoon.', link: 'https://goo.gl/maps/c5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: '5:00 PM', description: 'Boat back to Phuket (Rassada Pier).', link: 'https://goo.gl/maps/z8HkZ9xU6YvW5J4N7' },
-                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Phuket.', link: 'https://goo.gl/maps/d8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Evening', description: 'Explore Patong Beach Road night market.', link: 'https://goo.gl/maps/e5GkX9xU6YvR7F9A8' }
+                    { type: 'activity', time: 'Morning', description: 'Visit Maya Bay.', link: 'https://www.google.com/maps/search/?api=1&query=Maya+Bay+Koh+Phi+Phi' },
+                    { type: 'activity', time: 'Morning', description: 'See monkeys on Monkey Beach.', link: 'https://www.google.com/maps/search/?api=1&query=Monkey+Beach+Koh+Phi+Phi' },
+                    { type: 'activity', time: 'Morning', description: 'Swim in Pi Leh Lagoon.', link: 'https://www.google.com/maps/search/?api=1&query=Pi+Leh+Lagoon+Koh+Phi+Phi' },
+                    { type: 'activity', time: '5:00 PM', description: 'Boat back to Phuket (Rassada Pier).', link: 'https://www.google.com/maps/search/?api=1&query=Rassada+Pier+Phuket' },
+                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Phuket.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Phuket' },
+                    { type: 'activity', time: 'Evening', description: 'Explore Patong Beach Road night market.', link: 'https://www.google.com/maps/search/?api=1&query=Patong+Beach+Road' }
                 ],
                 sleep: { name: 'Phuket Graceland Resort And Spa', details: 'Reservation Details: Hotel Confirmation #321-10054495. Check-in: Aug 13 @ 3:00 PM. Checkout: Aug 15 @ 12:00 PM. Room: Standard Room, 1 or 2 Queen Beds. Guest: Zev Weisz.' }
             },
@@ -229,12 +233,12 @@
                 timeZone: "Asia/Bangkok",
                 weatherLocation: "Phuket",
                 events: [
-                    { type: 'activity', time: '10:00 AM', description: 'Elephant Swims at Lucky Beach.', link: 'https://goo.gl/maps/f8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'Visit Monkey Hill Viewpoint.', link: 'https://goo.gl/maps/g5GkX9J3L8vR7F9A8' },
+                    { type: 'activity', time: '10:00 AM', description: 'Elephant Swims at Lucky Beach.', link: 'https://www.google.com/maps/search/?api=1&query=Lucky+Beach+Phuket' },
+                    { type: 'activity', time: 'Morning', description: 'Visit Monkey Hill Viewpoint.', link: 'https://www.google.com/maps/search/?api=1&query=Monkey+Hill+Viewpoint+Phuket' },
                     { type: 'activity', time: 'Afternoon', description: 'Rent tuk tuks and explore viewpoints.' },
-                    { type: 'activity', time: 'Evening', description: 'Experience Bangla Road night market.', link: 'https://goo.gl/maps/h8JkZ9xU6YvW5J4N7' },
-                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Phuket.', link: 'https://goo.gl/maps/d8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Evening', description: 'See the Phuket FantaSea show.', link: 'https://goo.gl/maps/i5GkX9J3L8vR7F9A8' }
+                    { type: 'activity', time: 'Evening', description: 'Experience Bangla Road night market.', link: 'https://www.google.com/maps/search/?api=1&query=Bangla+Road+Phuket' },
+                    { type: 'food', time: 'Evening', description: 'Supper at Chabad House Phuket.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Phuket' },
+                    { type: 'activity', time: 'Evening', description: 'See the Phuket FantaSea show.', link: 'https://www.google.com/maps/search/?api=1&query=Phuket+FantaSea' }
                 ],
                 sleep: { name: 'Phuket Graceland Resort And Spa', details: 'Reservation Details: Hotel Confirmation #321-10054495. Check-in: Aug 13 @ 3:00 PM. Checkout: Aug 15 @ 12:00 PM. Room: Standard Room, 1 or 2 Queen Beds. Guest: Zev Weisz.' }
             },
@@ -244,10 +248,10 @@
                 timeZone: "Asia/Bangkok",
                 weatherLocation: "Phuket",
                 events: [
-                    { type: 'activity', time: 'Morning', description: 'Explore Old Phuket Town.', link: 'https://goo.gl/maps/j8JkZ9xU6YvW5J4N7' },
-                    { type: 'activity', time: 'Morning', description: 'Visit Rawai Beach.', link: 'https://goo.gl/maps/k5GkX9J3L8vR7F9A8' },
-                    { type: 'activity', time: 'Afternoon', description: 'Shop at Jungceylon Mall.', link: 'https://goo.gl/maps/l8JkZ9xU6YvW5J4N7' },
-                    { type: 'shabbat', time: 'Evening', description: 'Shabbat at Chabad of Phuket.', link: 'https://goo.gl/maps/d8JkZ9xU6YvW5J4N7' }
+                    { type: 'activity', time: 'Morning', description: 'Explore Old Phuket Town.', link: 'https://www.google.com/maps/search/?api=1&query=Old+Phuket+Town' },
+                    { type: 'activity', time: 'Morning', description: 'Visit Rawai Beach.', link: 'https://www.google.com/maps/search/?api=1&query=Rawai+Beach+Phuket' },
+                    { type: 'activity', time: 'Afternoon', description: 'Shop at Jungceylon Mall.', link: 'https://www.google.com/maps/search/?api=1&query=Jungceylon+Mall+Phuket' },
+                    { type: 'shabbat', time: 'Evening', description: 'Shabbat at Chabad of Phuket.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Phuket' }
                 ],
                 sleep: { name: 'Phuket Graceland Resort And Spa', details: 'Reservation Details: Hotel Confirmation #321-10054495. Check-in: Aug 13 @ 3:00 PM. Checkout: Aug 15 @ 12:00 PM. Room: Standard Room, 1 or 2 Queen Beds. Guest: Zev Weisz.' }
             },
@@ -270,7 +274,7 @@
                     { type: 'activity', time: 'Morning', description: 'Move to SALA Phuket Mai Khao Beach Resort.', details: 'Confirmation: 25807673' },
                     { type: 'activity', time: 'Morning', description: 'Chill at the resort\'s private pool.' },
                     { type: 'activity', time: '7:00 PM', description: 'Photographer at the resort.', details: 'Contact: 66-84-844-8415' },
-                    { type: 'food', time: 'Evening', description: 'Dinner at Chabad House Phuket.', link: 'https://goo.gl/maps/d8JkZ9xU6YvW5J4N7' },
+                    { type: 'food', time: 'Evening', description: 'Dinner at Chabad House Phuket.', link: 'https://www.google.com/maps/search/?api=1&query=Chabad+House+Phuket' },
                     { type: 'activity', time: 'Evening', description: 'Watch a fire show at the bar.' }
                 ],
                 sleep: { name: 'SALA Phuket Mai Khao Beach Resort', details: 'Confirmation: 25807673' }
@@ -321,17 +325,31 @@
             let currentDayData = itineraryData.find(day => {
                 const dayDate = new Date(day.date);
                 dayDate.setHours(0, 0, 0, 0);
-                return dayDate >= today;
+                return dayDate.getTime() === today.getTime();
             });
-
+            
+            let isBeforeTrip = false;
             if (!currentDayData) {
-                currentDayData = itineraryData[itineraryData.length - 1];
+                const firstDay = new Date(itineraryData[0].date);
+                firstDay.setHours(0,0,0,0);
+                if (today < firstDay) {
+                    isBeforeTrip = true;
+                }
+                currentDayData = itineraryData[0];
             }
+
 
             const container = document.getElementById('dynamic-dashboard-container');
             if (!container || !currentDayData) return;
 
-            container.innerHTML = `
+            const countdownHtml = `
+                <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-700 text-center">
+                    <p class="text-sm text-cyan-400 font-semibold">COUNTDOWN TO DEPARTURE</p>
+                    <div id="countdown-timer" class="text-xl font-bold text-slate-100 mt-1"></div>
+                </div>
+            `;
+
+            const dashboardHtml = `
                 <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4">
                     <div>
                         <p class="text-sm text-cyan-400 font-semibold">CURRENT LOCATION</p>
@@ -350,6 +368,8 @@
                 </div>
             `;
 
+            container.innerHTML = isBeforeTrip ? countdownHtml : dashboardHtml;
+
             function updateClock() {
                 const timeEl = document.getElementById('local-time');
                 if (timeEl) {
@@ -367,9 +387,35 @@
                     }
                 }
             }
+            
+            function updateCountdown() {
+                const timerEl = document.getElementById('countdown-timer');
+                if (timerEl) {
+                    const countDownDate = new Date("Aug 4, 2025 18:50:00").getTime();
+                    const now = new Date().getTime();
+                    const distance = countDownDate - now;
 
-            updateClock();
-            setInterval(updateClock, 1000);
+                    if (distance < 0) {
+                        timerEl.innerHTML = "Have a great trip!";
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    timerEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+            }
+
+            if(isBeforeTrip) {
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            } else {
+                updateClock();
+                setInterval(updateClock, 1000);
+            }
         }
 
         // --- DYNAMIC HTML GENERATION ---
@@ -378,6 +424,7 @@
         itineraryData.forEach((day, dayIndex) => {
             const accordionDiv = document.createElement('div');
             accordionDiv.className = 'day-accordion';
+            accordionDiv.id = `day-accordion-${dayIndex}`;
 
             const headerButton = document.createElement('button');
             headerButton.className = 'day-header w-full p-5 text-left flex justify-between items-center focus:outline-none';
@@ -481,15 +528,28 @@
             accordionDiv.appendChild(headerButton);
             accordionDiv.appendChild(contentDiv);
             container.appendChild(accordionDiv);
-            
-            // This logic is removed to keep all accordions closed by default
-            // if (dayIndex === 0) {
-            //     accordionDiv.classList.add('active');
-            // }
         });
 
-        // Initialize times and set interval to update them
+        function highlightCurrentDay() {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            itineraryData.forEach((day, index) => {
+                const dayDate = new Date(day.date);
+                dayDate.setHours(0, 0, 0, 0);
+
+                if (dayDate.getTime() === today.getTime()) {
+                    const accordionEl = document.getElementById(`day-accordion-${index}`);
+                    if (accordionEl) {
+                        accordionEl.classList.add('active', 'today-highlight');
+                    }
+                }
+            });
+        }
+
+        // Initialize features
         initializeDynamicDashboard();
+        highlightCurrentDay();
     </script>
 </body>
 </html>
